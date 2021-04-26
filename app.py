@@ -1,10 +1,10 @@
-from flask import Flask, render_template, request, url_for
+from flask import Flask, render_template
 from data import SourceData
 
 app = Flask(__name__)
 
 
-# 重写app.route使其支持POST方法
+# Flask将index.html设置为起始路径
 @app.route('/')
 def render_index_page():
     data = SourceData()

@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# @Time : 2020/8/26 14:48
-# @Author : way
-# @Site : 
-# @Describe:
 from utilities import connect_to_mongodb
 from utilities import get_data_from_mongodb
 
@@ -54,7 +48,7 @@ class SourceDataDemo:
             'title': '一线城市岗位数量',
             'data': get_data_from_mongodb('一线城市岗位数量', collection)
         }
-
+        # 随便给些数值在前端点亮这五座系统中主要抓取到数据的城市
         self.map_1_data = {
             'symbolSize': 1000,
             'data': [
@@ -161,10 +155,6 @@ class SourceDataDemo:
 
 
 class SourceData(SourceDataDemo):
-
     def __init__(self):
-        """
-        按照 SourceDataDemo 的格式覆盖数据即可
-        """
         super().__init__()
         self.title = '51Job可视化大屏'
