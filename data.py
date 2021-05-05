@@ -6,7 +6,6 @@ class SourceDataDemo:
     def __init__(self):
         conn = connect_to_mongodb()
         collection = conn['data_51job']
-
         # 默认的标题
         self.title = '大数据可视化展板通用模板'
         # 两个小的form看板
@@ -69,7 +68,7 @@ class SourceDataDemo:
             'xAxis': [i.get("name") for i in data.get('data')],
             'series': [i.get("value") for i in data.get('data')]
         }
-        # 返回的是标题和对应的数据
+        # 返回标题和对应的数据
         return echart
 
     @property
@@ -81,7 +80,6 @@ class SourceDataDemo:
             'series': [i.get("value") for i in data.get('data')]
         }
         return echart
-
     @property
     def echarts3_1(self):
         data = self.echarts3_1_data
@@ -91,7 +89,6 @@ class SourceDataDemo:
             'data': data.get('data'),
         }
         return echart
-
     @property
     def echarts3_2(self):
         data = self.echarts3_2_data
@@ -101,7 +98,6 @@ class SourceDataDemo:
             'data': data.get('data'),
         }
         return echart
-
     @property
     def echarts3_3(self):
         data = self.echarts3_3_data
@@ -111,7 +107,6 @@ class SourceDataDemo:
             'data': data.get('data'),
         }
         return echart
-
     @property
     def echart4(self):
         data = self.echart4_data
@@ -122,7 +117,6 @@ class SourceDataDemo:
             'data': data.get('data'),
         }
         return echart
-
     @property
     def echart5(self):
         data = self.echart5_data
@@ -133,7 +127,6 @@ class SourceDataDemo:
             'data': data.get('data'),
         }
         return echart
-
     @property
     def echart6(self):
         data = self.echart6_data
@@ -143,7 +136,6 @@ class SourceDataDemo:
             'data': data.get('data'),
         }
         return echart
-
     @property
     def map_1(self):
         data = self.map_1_data
@@ -152,7 +144,6 @@ class SourceDataDemo:
             'data': data.get('data'),
         }
         return echart
-
 
 class SourceData(SourceDataDemo):
     def __init__(self):

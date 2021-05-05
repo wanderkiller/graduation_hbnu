@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 
-
+# 获取mongodb实例
 def connect_to_mongodb():
     MONGO_URI = 'mongodb+srv://admin:uniHVb5ghi6hFmb@cluster0.faj5b.mongodb.net'
     MONGO_DB = 'graduation_project'
@@ -9,6 +9,7 @@ def connect_to_mongodb():
     return conn
 
 
+# 从mongodb中获取数据
 def get_data_from_mongodb(title, collection):
     data_list = list()
     title = str(title)
