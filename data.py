@@ -69,7 +69,7 @@ class SourceDataDemo:
             'xAxis': [i.get("name") for i in data.get('data')],
             'series': [i.get("value") for i in data.get('data')]
         }
-        # 返回的是标题和对应的数据，并没有说用什么方式展现！
+        # 返回的是标题和对应的数据
         return echart
 
     @property
