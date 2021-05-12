@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 
+
 # 获取mongodb实例
 def connect_to_mongodb():
     MONGO_URI = 'mongodb+srv://admin:uniHVb5ghi6hFmb@cluster0.faj5b.mongodb.net'

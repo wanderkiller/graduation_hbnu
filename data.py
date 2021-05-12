@@ -7,7 +7,7 @@ class SourceDataDemo:
         conn = connect_to_mongodb()
         collection = conn['data_51job']
         # 默认的标题
-        self.title = '大数据可视化展板通用模板'
+        self.title = '刘天赋的毕业设计-大数据看板'
         # 两个小的form看板
         self.counter = {'name': '服务器信息', 'value': 'AZURE Hong Kong (eastasia)'}
         self.counter2 = {'name': 'MongoDB数据总量', 'value': collection.count_documents({})}

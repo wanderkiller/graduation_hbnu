@@ -4,8 +4,11 @@
     <option name="enabled" value="true" />
   </component>
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/venv/miniconda3" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/miniconda" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.9 (graduation_hbnu)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="socket.io" level="application" />
   </component>
